@@ -1,0 +1,231 @@
+#centerBead {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: #fff;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color: #000;
+        cursor: pointer;
+        -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+
+  .title{
+    color: #fff;
+position: absolute;
+top: 14px;
+bottom: 0;
+text-align: center;
+  }
+
+  .counter-btn:active {
+    background-color: rgb(0, 255, 0);
+    background-color: #0b0a0a !important; 
+  }  
+
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    background: #1b242f;
+    flex-direction: row;
+    color: #fff;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: red;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  background: #5e1616;}
+
+button,
+button span {
+  transition: 200ms;
+}
+
+button .text {
+  transform: translateX(35px);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+button .icon {
+  position: absolute;
+  border-left: 1px solid #c41b1b;
+  transform: translateX(110px);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button svg {
+  width: 15px;
+  fill: #eee;
+}
+
+button:hover {
+    background: #801212 ;
+}
+
+button:hover .text {
+  color: transparent;
+}
+
+button:hover .icon {
+  width: 150px;
+  border-left: none;
+  transform: translateX(0);
+}
+
+button:focus {
+  outline: none;
+}
+
+.sibha{
+    display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+order: 1;
+}
+
+
+  
+  .candle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .candle-flame {
+    width: 15px;
+    height: 30px;
+    background: #ffad00;
+    border-radius: 8px 8px 8px 8px/20px 20px 8px 8px;
+    box-shadow: 0px 0px 20px 0px #ffad00;
+    -webkit-animation: flame-twirl 15s ease infinite, glow 2s ease infinite;
+            animation: flame-twirl 15s ease infinite, glow 2s ease infinite;
+  }
+  .candle-wick {
+    height: 10px;
+    width: 3px;
+    background: #ad87a9;
+  }
+  .candle-wax {
+    width: 40px;
+    height: 110px;
+    background: #ffffff;
+    border-radius: 6px;
+    box-shadow: inset -15px 0px 0px -10px #d8deed;
+  }
+  .candle-stand {
+    width: 100px;
+    height: 8px;
+    border-radius: 3px;
+  }
+  
+  @-webkit-keyframes flame-twirl {
+    0%, 22%, 49%, 62%, 81%, 100% {
+      border-radius: 2px 14px 8px 8px/20px 20px 8px 8px;
+    }
+    14%, 32%, 56%, 70%, 89% {
+      border-radius: 14px 2px 8px 8px/20px 20px 8px 8px;
+    }
+  }
+  
+  @keyframes flame-twirl {
+    0%, 22%, 49%, 62%, 81%, 100% {
+      border-radius: 2px 14px 8px 8px/20px 20px 8px 8px;
+    }
+    14%, 32%, 56%, 70%, 89% {
+      border-radius: 14px 2px 8px 8px/20px 20px 8px 8px;
+    }
+  }
+  @-webkit-keyframes glow {
+    0%, 30%, 60%, 80%, 100% {
+      box-shadow: 0 0 20px 0 #ffad00;
+    }
+    20%, 50%, 70% {
+      box-shadow: 0 0 22px 0 #ffad00;
+    }
+  }
+  @keyframes glow {
+    0%, 30%, 60%, 80%, 100% {
+      box-shadow: 0 0 20px 0 #ffad00;
+    }
+    20%, 50%, 70% {
+      box-shadow: 0 0 22px 0 #ffad00;
+    }
+  }
+
+  #progress {
+    color: white;
+    color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+text-align: center;
+order: 2;
+}
+#progress div {
+    padding: 10px;
+}
+
+
+#progress .total-beads,
+.daily-beads,
+.weekly-beads,
+.monthly-beads{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: black;
+font-weight: bolder;
+}
+.center{
+    order:-3
+    ;
+}
+
+
+@media screen and (max-width:530px){
+    body{
+        flex-direction: column;
+    }
+
+
+
+
+}
