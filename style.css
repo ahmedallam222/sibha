@@ -44,6 +44,7 @@ body {
     background: #1b242f;
     flex-direction: row;
     color: #fff;
+        font-family: 'Cairo', sans-serif;
 }
 
 .noselect {
